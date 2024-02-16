@@ -9,7 +9,7 @@ const getRouteByUrl = (url) => {
   let currentRoute = null;
   // Parcours de toutes les routes pour trouver la correspondance
   allRoutes.forEach((element) => {
-    if (element.url == url) {
+    if (element.url === url) {
       currentRoute = element;
     }
   });
