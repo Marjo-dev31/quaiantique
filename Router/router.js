@@ -24,6 +24,7 @@ const getRouteByUrl = (url) => {
 // Fonction pour charger le contenu de la page
 const LoadContentPage = async () => {
   const path = window.location.pathname;
+  console.log(path)
   // Récupération de l'URL actuelle
   const actualRoute = getRouteByUrl(path);
   // Récupération du contenu HTML de la route
@@ -44,6 +45,7 @@ const LoadContentPage = async () => {
 
   // Changement du titre de la page
   document.title = actualRoute.title + " - " + websiteName;
+  
 };
 
 // Fonction pour gérer les événements de routage (clic sur les liens)

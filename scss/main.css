@@ -12022,7 +12022,7 @@ p {
   justify-content: center;
 }
 
-h .text-justify {
+.text-justify {
   text-align: justify;
 }
 
@@ -12045,4 +12045,10 @@ h .text-justify {
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: all 0.3s;
+}
+
+.img-portrait {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 350px;
 }/*# sourceMappingURL=main.css.map */

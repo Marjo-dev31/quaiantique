@@ -49,7 +49,7 @@ p {
         
     }
 }
-h
+
 
 .text-justify {
     text-align: justify;
@@ -78,4 +78,10 @@ h
         opacity: 0;
         transition: all 0.3s;
     }
+}
+
+.img-portrait {
+    object-fit: cover;
+    height :350px
+
 }
