@@ -12,9 +12,11 @@ const getRouteByUrl = (url) => {
     if (element.url === url) {
       currentRoute = element;
     }
+    
   });
   // Si aucune correspondance n'est trouvée, on retourne la route 404
   if (currentRoute != null) {
+
     return currentRoute;
   } else {
     return route404;
@@ -57,12 +59,13 @@ const link = document.getElementById('galerieLink');
     console.log(link)
     console.log(allRoutes, 'tata')
     console.log(window.location.href, 'ruru')
+    
     // window.location.href = event.currentTarget.url
   //  if (Route.url === event.currentTarget.href) {
   //   window.location.href = event.currentTarget.href
   //  }
   LoadContentPage();
-    console.log(getRouteByUrl, 'riri')
+    // console.log(getRouteByUrl, 'riri')
   })
   
   const routeEvent = (event) => {
